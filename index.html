@@ -23,87 +23,195 @@
 </head>
 
 <body>
+    <header>
+        <nav class="nav collapsible">
+            <a aria-label="moshify" class="nav__brand" href="/"><img></a>
+            <svg class="icon icon--white nav__toggler">
+                <!-- * this is the correct path that we need to enter to see the svg -->
+                <use href="images/sprite.svg#menu"></use>
+            </svg>
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item"><a href="#">Home</a></li>
+                <li class="nav__item"><a href="#">Our Practice</a></li>
+                <li class="nav__item"><a href="#">Services</a></li>
+                <li class="nav__item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- TODO: Add the plan block -->
-    <!-- * Task has been completed -->
+    <!-- TODO Add the features block -->
 
-    <section class="block container block-plan" data-aos="slide-down">
-        <div class="grid grid--1x3">
-            <div class="plan">
-                <div class="card card--secondary">
-                    <header class="card__header">
-                        <h3 class="plan__name">Entry</h3>
-                        <span class="plan__price">$14</span>
-                        <span class="plan__billing-cycle">/month</span>
-                        <span class="badge badge--secondary badge--small">10% off</span>
-                        <span class="plan__description">Easy start on the cloud</span>
-                    </header>
-                    <div class="card__body">
-                        <ul class="list list--tick">
-                            <li class="list__item">Unlimited Websites</li>
-                            <li class="list__item">Unlimited Bandwidth</li>
-                            <li class="list__item">100 GB SSD Storage</li>
-                            <li class="list__item">3 GB RAM</li>
-                        </ul>
-                        <button class="btn btn--outline btn--block">Buy now</button>
+    <section class="container block">
+        <header class="block__header">
+            <h2 class="block__heading">Watson Dental Care</h2>
+            <p>
+                Watson Dental Care continues to be one of the most trusted Orlando Dental Practice for over 35
+                years!
+                We are dedicated to providing a relaxing and enjoyable experience for all of our patients and
+                their
+                loved ones.
+                When you visit our dental office your smile is our top priority. Our entire team is dedicated to
+                providing you with the personalized, gentle care that you deserve.
+                Whether it is your first visit to a dentist or if you are seeking a second opinion, we take
+                pride in
+                providing a comfortable family like atmosphere and look forward to greeting you!
+                We want you to feel at ease when you come for your dental visit.
+            </p>
+
+        </header>
+
+        <!-- TODO: Add the plan block -->
+        <!-- * Task has been completed -->
+
+        <section class="block container block-plan" data-aos="slide-down">
+            <div class="grid grid--1x3">
+                <div class="plan">
+                    <div class="card card--secondary">
+                        <header class="card__header">
+                            <h3 class="plan__name">Looking for an Orlando General Dentist?</h3>
+                            <span class="plan__description">We offer a wide variety of general and family dental
+                                services
+                                including:</span>
+                        </header>
+                        <div class="card__body">
+                            <ul class="list list--tick">
+                                <li class="list__item">Teeth Cleaning</li>
+                                <li class="list__item">Dental Fillings</li>
+                                <li class="list__item">Deep Cleaning</li>
+                                <li class="list__item">Dental Exams</li>
+                                <li class="list__item">Dental X-Rays</li>
+                            </ul>
+                            <!-- <button class="btn btn--outline btn--block">Buy now</button> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! On mobile the scaling for this card is to big we need to change this -->
+                <!-- TODO: fix the scaling of this card on mobile to match the others -->
+                <div>
+                    <div class="card card--primary">
+                        <header class="card__header">
+                            <h3 class="plan__name">Restorative Dentistry in Orlando!</h3>
+                            <span class="plan__description">Watson Dental Care’s office is proud to offer the following
+                                restorative care options:</span>
+                        </header>
+                        <div class="card__body">
+                            <ul class="list list--tick">
+                                <li class="list__item">Cracked Teeth</li>
+                                <li class="list__item">Tooth Extractions</li>
+                                <li class="list__item">TMJ</li>
+                                <li class="list__item">Invisible Braces</li>
+                                <li class="list__item">Dentures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan">
+                    <div class="card card--secondary">
+                        <header class="card__header">
+                            <h3 class="plan__name">Your Orlando Cosmetic Dentist!</h3>
+                            <span class="plan__description">Here is a list of the cosmetic procedures performed at our
+                                dental practice:</span>
+                        </header>
+                        <div class="card__body">
+                            <ul class="list list--tick">
+                                <li class="list__item">Dental Crowns & Bridges</li>
+                                <li class="list__item">Dental Veneers</li>
+                                <li class="list__item">Teeth Whitening</li>
+                                <li class="list__item">Six Month Smiles</li>
+                                <li class="list__item">Dental Bonding</li>
+
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- ! On mobile the scaling for this card is to big we need to change this -->
-            <!-- TODO: fix the scaling of this card on mobile to match the others -->
-            <div class="plan plan--popular">
-                <div class="card card--primary">
-                    <header class="card__header">
-                        <h3 class="plan__name">Business</h3>
-                        <span class="plan__price">$24</span>
-                        <span class="plan__billing-cycle">/month</span>
-                        <span class="badge badge--primary badge--small">20% off</span>
-                        <span class="plan__description">Optimal Cloud Experience</span>
-                    </header>
-                    <div class="card__body">
-                        <ul class="list list--tick">
-                            <li class="list__item">Unlimited Websites</li>
-                            <li class="list__item">Unlimited Bandwidth</li>
-                            <li class="list__item">100 GB SSD Storage</li>
-                            <li class="list__item">3 GB RAM</li>
-                            <li class="list__item">2 CPU Cores</li>
-                        </ul>
-                        <button class="btn btn--outline btn--block">Buy now</button>
-                    </div>
-                </div>
+        </section>
+        <!-- * using a article here because the feature component can stand on its own this is better to use semantically -->
+        <!-- * this Article is being used to show off this standalone content -->
+        <article class="grid grid--1x2 feature">
+            <!-- ! this is how we use AOS -->
+            <div class="feature__content" data-aos="fade-right">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <!-- * this is the correct path that we need to enter to see the svg -->
+                        <!-- <use href="images/sprite.svg#easy"></use> -->
+                    </svg>
+                </span>
+                <h3 class="feature__heading">Change title</h3>
+                <p>
+                    Detecting dental problems early on with regular exams can save time, money, teeth, and maybe even
+                    your life.
+                    For proper care we cannot stress enough to have an exam every 6 to 12 months as well as brushing
+                    your teeth twice a day for two minutes each time with floss.
+                </p>
+                <a href="#" class="link-arrow">Learn More</a>
             </div>
+            <picture data-aos="zoom-in-right">
+                <!-- <source type="image/webp" srcset="images/easy1x.webp 1x, images/easy2x.webp 2x">
+                <source type="image/png" srcset="images/easy1x.jpg 1x, images/easy2x.jpg 2x">
+                <img class="feature__img" src="images/easy2x.jpg" alt=""> -->
+            </picture>
+        </article>
 
-            <div class="plan">
-                <div class="card card--secondary">
-                    <header class="card__header">
-                        <h3 class="plan__name">Business Plus</h3>
-                        <span class="plan__price">$54</span>
-                        <span class="plan__billing-cycle">/month</span>
-                        <span class="badge badge--secondary badge--small">10% off</span>
-                        <span class="plan__description">Easy start on the cloud</span>
-                    </header>
-                    <div class="card__body">
-                        <ul class="list list--tick">
-                            <li class="list__item">Unlimited Websites</li>
-                            <li class="list__item">Unlimited Bandwidth</li>
-                            <li class="list__item">100 GB SSD Storage</li>
-                            <li class="list__item">3 GB RAM</li>
-
-                        </ul>
-                        <button class="btn btn--outline btn--block">Buy now</button>
-                    </div>
-                </div>
+        <article class="grid grid--1x2 feature">
+            <picture>
+                <!-- <source type="image/webp" srcset="images/fast1x.webp 1x, images/fast2x.webp 2x">
+                <source type="image/png" srcset="images/fast1x.jpg 1x, images/fast2x.jpg 2x">
+                <img class="feature__img" src="images/fast2x.jpg" alt=""> -->
+            </picture>
+            <div class="feature__content">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <!-- * this is the correct path that we need to enter to see the svg -->
+                        <!-- <use href="images/sprite.svg#computer"></use> -->
+                    </svg>
+                </span>
+                <h3 class="feature__heading">Healthy Smile</h3>
+                <p>
+                    Your smile and overall dental health is a team effort. With the care we provide and the care you
+                    give yourself at home you will have a smile to be be proud of.
+                </p>
+                <a href="#" class="link-arrow">Learn More</a>
             </div>
-        </div>
+        </article>
+
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <!-- * this is the correct path that we need to enter to see the svg -->
+                        <!-- <use href="images/sprite.svg#settings"></use> -->
+                    </svg>
+                </span>
+                <h3 class="feature__heading">Change title</h3>
+                <p>
+                    If you need a dentist in the Orlando area give us a call or make an (appointment online link to
+                    appointments).
+                    We would love to have the opportunity to serve you and your family!
+                    Our Dentists Care About You and Your Dental Health!
+                </p>
+                <a href="#" class="link-arrow">Book an Appointment</a>
+            </div>
+            <picture>
+                <!-- <source type="image/webp" srcset="images/wordpress1x.webp 1x, images/wordpress2x.webp 2x">
+                <source type="image/png" srcset="images/wordpress1x.jpg 1x, images/wordpress2x.jpg 2x">
+                <img class="feature__img" src="images/wordpress2x.jpg" alt=""> -->
+            </picture>
+        </article>
     </section>
+
+
 
     <!-- TODO: Add the testimonal block -->
 
     <section class="block">
         <header class="block__header">
-            <h2>What our Customers are Saying</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, deleniti.</p>
+            <h2>What your Neighbors are Saying</h2>
+            <p>The reviews from our dental patients speak for themselves.
+                Checkout and see what your neighbors have to say about our practice!</p>
         </header>
 
         <div class="container" data-aos="slide-up">
